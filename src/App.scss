@@ -1,0 +1,94 @@
+@import "Styles/_ipsit";
+
+.owl-nav .owl-prev span,
+.owl-nav .owl-next span {
+    font-size: 5rem;
+}
+
+#hero {
+    background-color: $theme-1;
+}
+
+#navbar {
+    width: 100%;
+    background: none !important;
+    position: fixed;
+    z-index: 100;
+}
+
+@mixin bg-full {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.dark-bg-1 {
+    background: url('./img/bg1.jpeg');
+    @include bg-full;
+    // filter: blur(3px);
+}
+
+.dark-bg-2 {
+    background: url('./img/bg2.jpeg');
+    @include bg-full;
+}
+
+.dark-bg-3 {
+    background: linear-gradient($theme-1a, $theme-2a), url('./img/bg3.jpeg');
+    @include bg-full;
+}
+
+.dark-bg-4 {
+    background: url('./img/bg4.jpeg');
+    @include bg-full;
+}
+
+.dark-bg-5 {
+    background: url('./img/bg8.jpeg');
+    @include bg-full;
+}
+
+.light-bg-1 {
+    background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url('./img/bg5.jpeg');
+    @include bg-full;
+}
+
+.light-bg-2 {
+    background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url('./img/bg6.jpeg');
+    @include bg-full;
+}
+
+.light-bg-3 {
+    background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url('./img/bg7.jpeg');
+    @include bg-full;
+}
+
+
+.hover-light:hover {
+    cursor: pointer;
+    background-color: #fff;
+    transition: 300ms;
+}
+
+.hover-light:hover>div h6,
+.hover-light:hover>div i {
+    color: $theme-4;
+    transition: 300ms;
+}
+
+.f-border {
+    border-top: 1px solid $grey;
+    border-left: 1px solid $grey;
+    border-right: 1px solid $grey;
+}
+
+.border-bottom-bold {
+    border-bottom: 5px solid $theme-4  !important;
+}
+
+.team-card {
+    transition: 500ms;
+    &:hover {
+        background-color: $grey;
+    }
+}

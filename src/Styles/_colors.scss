@@ -1,0 +1,50 @@
+
+.fff{
+    color: #fff !important;
+    &:hover{color: #fff !important;}
+}
+.bg-fff{background-color: #fff !important;}
+
+.fff-50{
+    color: #ffffff91;
+    &:hover{color: #ffffff91;}
+}
+
+.fff-60{
+    color: #ffffffca;
+    &:hover{color: #ffffffca;}
+}
+
+.f-bg-000{
+    background-color: #000;
+}
+
+.f-black{
+    color: $black;
+    &:hover{color: $black;}
+}
+.f-grey{
+    color: $grey;
+    &:hover{color: $grey;}
+}
+.f-grey-50{
+    color: $grey-50;
+    &:hover{color: $grey-50;}
+}
+
+.bg-1{background-color: $theme-1;}
+.bg-2{background-color: $theme-2;}
+.bg-3{background-color: $theme-3;}
+.bg-4{background-color: $theme-4;}
+
+.f-color-1{color: $theme-1 !important;}
+.f-color-2{color: $theme-2 !important;}
+.f-color-3{color: $theme-3 !important;}
+.f-color-4{color: $theme-4 !important;}
+
+.icon-fb{color: $fb;}
+.icon-in{color: $in;}
+.icon-twit{color: $twit;}
+.icon-insta{color: $insta;}
+.icon-p{color: $p;}
+.icon-y{color: $y;}
