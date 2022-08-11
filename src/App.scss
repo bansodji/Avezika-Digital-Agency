@@ -48,6 +48,11 @@
     @include bg-full;
 }
 
+.dark-bg-6 {
+    background: url('./img/bg9.jpeg');
+    @include bg-full;
+}
+
 .light-bg-1 {
     background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url('./img/bg5.jpeg');
     @include bg-full;
@@ -90,5 +95,19 @@
     transition: 500ms;
     &:hover {
         background-color: $grey;
+    }
+}
+
+.border-below-left-blue{
+    position: relative;
+
+    &::after{
+        position: absolute;
+        content: "";
+        width: 100px;
+        border: 1px solid $theme-4;
+        left: 0;
+        top: 200%;
+        transform: translateY(-200%);
     }
 }

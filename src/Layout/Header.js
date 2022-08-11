@@ -6,7 +6,7 @@ import Hero3 from "../img/hero3.jpeg";
 import { HeroCarousel } from "../Components/Carousel";
 import MenuIcon from '@mui/icons-material/Menu';
 import CloseIcon from '@mui/icons-material/Close';
-import {Link} from "react-router-dom";
+import { Link } from "react-router-dom";
 
 const Header = () => {
     return (
@@ -56,14 +56,26 @@ function MenuToggler() {
                 </a>
                 <CloseIcon id="menu-close-btn" className="fs-1 cursor-pointer" />
             </div>
-            <div className="size-100 mt-4 d-flex justify-content-center text-center">
+            <div id="menu-list" className="size-100 mt-4 d-flex justify-content-center text-center">
                 <ul className="uppercase">
-                    <li className="fs-3 my-4 font-800"><Link className="route-redirect" to="/">Home</Link></li>
-                    <li className="fs-3 my-4 font-800"><Link className="route-redirect" to="/about">About Us</Link></li>
-                    <li className="fs-3 my-4 font-800"><Link className="route-redirect" to="/services">Services</Link></li>
-                    <li className="fs-3 my-4 font-800"><Link className="route-redirect" to="/portfolio">Portfolio</Link></li>
-                    <li className="fs-3 my-4 font-800"><Link className="route-redirect" to="/our_news">Our News</Link></li>
-                    <li className="fs-3 my-4 font-800"><Link className="route-redirect" to="/contact">Contact</Link></li>
+                    <li className="fs-3 my-4 font-800">
+                        <Link className="route-redirect fff" to="/">Home</Link>
+                    </li>
+                    <li className="fs-3 my-4 font-800">
+                        <Link className="route-redirect fff" to="/about">About Us</Link>
+                    </li>
+                    <li className="fs-3 my-4 font-800">
+                        <Link className="route-redirect fff" to="/services">Services</Link>
+                    </li>
+                    <li className="fs-3 my-4 font-800">
+                        <Link className="route-redirect fff" to="/portfolio">Portfolio</Link>
+                    </li>
+                    <li className="fs-3 my-4 font-800">
+                        <Link className="route-redirect fff" to="/our_news">Our News</Link>
+                    </li>
+                    <li className="fs-3 my-4 font-800">
+                        <Link className="route-redirect fff" to="/contact">Contact</Link>
+                    </li>
                 </ul>
             </div>
         </div>

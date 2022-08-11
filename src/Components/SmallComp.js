@@ -26,11 +26,30 @@ const HeadingLight = (props) => {
         </div>
     );
 }
+
 const HeadingDark = (props) => {
     return (
         <div className="d-flex flex-column align-items-center">
             <h1 className="display-4 border-below-dark font-800 heading">{props.heading}</h1>
             <h4 className="padding text-center mt-5 text-upper lh-base text-secondary">{props.subheading}</h4>
+        </div>
+    );
+}
+
+const HeadingLeftDark = (props) => {
+    return (
+        <div className="d-flex flex-column">
+            <h1 className="display-3 border-below-left-dark font-800 heading">{props.heading}</h1>
+            <h4 className="padding text-center mt-5 text-upper lh-base text-secondary">{props.subheading}</h4>
+        </div>
+    );
+}
+
+const HeadingLeftLight = (props) => {
+    return (
+        <div className="d-flex flex-column">
+            <h1 className="display-3 fff border-below-left-light uppercase font-800 heading">{props.heading}</h1>
+            <h4 className="padding fff-50 text-center mt-5 text-upper lh-base text-secondary">{props.subheading}</h4>
         </div>
     );
 }
@@ -70,4 +89,4 @@ function BoxOverlayHover(props) {
     );
 }
 
-export { HeadingLight, HeadingDark, BoxOverlay, BoxOverlayHover, Theme1a, Theme2a, Theme3a, Theme4a, Theme1b, Theme2b, Theme3b, Theme4b };
+export { HeadingLight, HeadingDark, HeadingLeftDark, HeadingLeftLight, BoxOverlay, BoxOverlayHover, Theme1a, Theme2a, Theme3a, Theme4a, Theme1b, Theme2b, Theme3b, Theme4b };

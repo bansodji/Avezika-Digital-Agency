@@ -152,6 +152,32 @@ p {
     border-bottom: 2px solid #fff;
 }
 
+.border-below-left-light{
+    position: relative;
+
+    &::after{
+        position: absolute;
+        content: "";
+        width: 100px;
+        border: 1px solid $fff;
+        left: 0;
+        bottom: -30px;
+    }
+}
+
+.border-below-left-dark{
+    position: relative;
+
+    &::after{
+        position: absolute;
+        content: "";
+        width: 100px;
+        border: 1px solid $black-50;
+        left: 0;
+        bottom: -30px;
+    }
+}
+
 .hide-this{
     visibility: hidden;  
     clip-path:circle(20% at 50% 50% );  
@@ -180,4 +206,10 @@ p {
 }
 .cursor-pointer{
     cursor: pointer !important;
+}
+
+.route-redirect{
+    &:hover{
+        color: $theme-4 !important;
+    }
 }

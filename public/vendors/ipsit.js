@@ -1,5 +1,6 @@
 $(document).ready(function () {
 
+  //owl carousel
   $('.owl-carousel').owlCarousel({
     loop: true,
     margin: 20,
@@ -20,28 +21,10 @@ $(document).ready(function () {
       }
     }
   });
-  $('.testmonial-carousel').owlCarousel({
-    loop: true,
-    margin: 10,
-    nav: true,
-    dots: false,
-    items: 1,
-    responsive: {
-      0: {
-        nav: false,
-      },
-      600: {
-        nav: true,
-      },
-      1000: {
-        nav: true,
-      }
-    }
-  });
-
 
 });
 
+//On scroll change navbar
 $(window).on("scroll", function () {
   if ($(window).scrollTop()) {
       $("#navbar").addClass("is-sticky");
@@ -71,6 +54,7 @@ $(window).on("scroll", function () {
   }
 });
 
+//Menu toggler
 $(function(){
   $("#menu-toggler").hide();
   $("#menu-toggler-btn").on('click', function(){
@@ -82,11 +66,10 @@ $(function(){
     $("#menu-toggler").fadeOut();
     $("#menu-toggler-btn").fadeIn('slow');
     $("#navbar").fadeIn();
-  });
+  });  
   $(".route-redirect").on('click', function(){
     $("#menu-toggler").fadeOut();
     $("#navbar").fadeIn();
     $("#menu-toggler-btn").fadeIn('slow');
   });
 });
-
