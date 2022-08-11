@@ -7,13 +7,13 @@ const Footer = () => {
             <Container>
                 <Row>
                     <Col lg="3">
-                        <div className="d-flex justify-content-start">
+                        <div className="d-flex justify-content-center py-2">
                             <h6 className=""><span className="font-200 fff-50">Copyright ©</span> <span className="f-color-4">Avezika</span></h6>
                         </div>
                     </Col>
                     <Col lg="6">
                         <center>
-                            <div className="fff-50 font-200">
+                            <div className="fff-50 font-200 py-2">
                                 <span className="mx-4 font-13-5 font-600 cursor-pionter">Support</span>|
                                 <span className="mx-4 font-13-5 font-600 cursor-pionter">Contact Us</span>|
                                 <span className="mx-4 font-13-5 font-600 cursor-pionter">Disclaimer</span>|
@@ -22,7 +22,7 @@ const Footer = () => {
                         </center>
                     </Col>
                     <Col lg="3">
-                        <div className="d-flex justify-content-end">
+                        <div className="d-flex justify-content-center py-2">
                             <div>
                                 <i class="fab fa-facebook-f mx-2 icon-fb"></i>
                                 <i class="fab fa-linkedin-in mx-2 icon-in"></i>

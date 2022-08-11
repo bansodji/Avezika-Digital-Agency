@@ -20,8 +20,8 @@ const Testmonial = () => {
                     <div className="owl-carousel owl-theme">
                         {
                             TestmonialData.map((data) => (
-                                <div className="item">
-                                    <Row className="bg-fff size-100">
+                                <div className="item p-4 bg-fff">
+                                    <Row className="size-100">
                                         <Col lg="3">
                                             <div className="size-100 d-flex justify-content-center align-items-center">
                                                 <img src={data.image} className="circle-img-x" alt="" />
@@ -32,7 +32,7 @@ const Testmonial = () => {
                                                 <h6 className="heading uppercase font-800 f-color-4">{data.name}</h6>
                                                 <span className="f-grey-50 font-13">{data.designation}</span>
                                                 <p className="text-secondary  mt-4">{data.testmony}</p>
-                                                <div style={QuotePosition} className="position-absolute ms-5"><i class="fas fa-quote-right fs-1 f-color-4"></i></div>
+                                                <div style={QuotePosition} className="position-absolute ms-5"><i className="fas fa-quote-right fs-1 f-color-4"></i></div>
                                             </div>
                                         </Col>
                                     </Row>
