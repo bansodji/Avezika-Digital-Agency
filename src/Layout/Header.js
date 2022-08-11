@@ -71,9 +71,6 @@ function MenuToggler() {
                         <Link className="route-redirect fff" to="/portfolio">Portfolio</Link>
                     </li>
                     <li className="fs-3 my-4 font-800">
-                        <Link className="route-redirect fff" to="/our_news">Our News</Link>
-                    </li>
-                    <li className="fs-3 my-4 font-800">
                         <Link className="route-redirect fff" to="/contact">Contact</Link>
                     </li>
                 </ul>

@@ -4,11 +4,11 @@ import { HeadingLight } from "./SmallComp";
 import Img1 from "../img/team/team-1.jpg";
 import OurTeam from "../Data/OutTeam";
 
-const OurCoreMinds = () => {
+const OurCoreMinds = (props) => {
     return (
         <section className="py-5 dark-bg-1">
             <Container>
-                <HeadingLight heading="Our Core Minds" subheading="Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit, est cumque." />
+                <HeadingLight heading={props.heading} subheading="Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit, est cumque." />
                 <Row className="my-5">
                     {OurTeam.map( (data) => (
                         <Col lg="4">

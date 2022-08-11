@@ -3,11 +3,11 @@ import { Col, Container, Row } from "react-bootstrap";
 import WhyChooseUsData from "../Data/WhyChooseUsData";
 import { HeadingDark } from "./SmallComp";
 
-const WhyChooseUs = () => {
+const WhyChooseUs = (props) => {
     return (
         <section className="py-5 light-bg-1">
             <Container>
-                <HeadingDark heading="Why Choose Us" subheading="Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit, est cumque." />
+                <HeadingDark heading={props.heading} subheading="Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit, est cumque." />
                 <Row className="my-5 g-0">
                     {WhyChooseUsData.map( (data)=> (
                         <Col lg="3">

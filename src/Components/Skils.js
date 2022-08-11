@@ -3,11 +3,11 @@ import { Container, Col, Row } from "react-bootstrap";
 import { HeadingLight } from "./SmallComp";
 import Img from "../img/skils.webp";
 
-const Skils = () => {
+const Skils = (props) => {
     return (
         <section className="py-5 dark-bg-2">
             <Container className="fff">
-                <HeadingLight heading="Our Skills" subheading="Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit, est cumque." />
+                <HeadingLight heading={props.heading} subheading="Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit, est cumque." />
                 <div className="my-5 py-5">
                     <img src={Img} className="img-fluid" alt="" />
                 </div>

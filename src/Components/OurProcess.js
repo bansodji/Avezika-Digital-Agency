@@ -3,11 +3,11 @@ import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import { HeadingLight } from "./SmallComp";
 
-export const OurProcess = () => {
+export const OurProcess = (props) => {
     return (
         <section className="py-5 dark-bg-6">
             <Container className="">
-                <HeadingLight heading="Our Process" subheading="Temporibus praesentium. Labore enim numquam quos ullam consectetur eos ex possimus atque" />
+                <HeadingLight heading={props.heading} subheading="Temporibus praesentium. Labore enim numquam quos ullam consectetur eos ex possimus atque" />
                 <Row className="my-5">
                     <Column id="01" title="Client Interactcion" desc="Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aut ipsum, ipsa natus deserunt sapiente adipisci neque veritatis suscipit nisi necessitatibus!"/>
                     <Column id="02" title="Project Creation" desc="Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aut ipsum, ipsa natus deserunt sapiente adipisci neque veritatis suscipit nisi necessitatibus!"/>

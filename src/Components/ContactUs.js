@@ -6,11 +6,11 @@ import PersonOutlineIcon from '@mui/icons-material/PersonOutline';
 import MailOutlineIcon from '@mui/icons-material/MailOutline';
 import LanguageIcon from '@mui/icons-material/Language';
 
-const ContactUs = () => {
+const ContactUs = (props) => {
     return (
         <section className="py-5 dark-bg-5 fff">
             <Container>
-                <HeadingLight heading="Contact Us" />
+                <HeadingLight heading={props.heading} />
                 <Row className="my-5">
                     {ContactData.map((data) => (
                         <Col lg="3">

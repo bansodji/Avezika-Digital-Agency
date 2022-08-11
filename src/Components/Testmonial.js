@@ -10,11 +10,11 @@ const QuotePosition = {
     transform: "translate(-90%, -90%)"
 }
 
-const Testmonial = () => {
+const Testmonial = (props) => {
     return (
         <section className="py-5 light-bg-3">
             <Container>
-                <HeadingDark heading="Customers About Us" subheading="Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit, est cumque." />
+                <HeadingDark heading={props.heading} subheading="Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit, est cumque." />
 
                 <div className="my-5">
                     <div className="owl-carousel owl-theme">
